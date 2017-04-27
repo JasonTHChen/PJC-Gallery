@@ -4,7 +4,90 @@ body {
   outline: none;
 }
 
+/* header css */
+.header {
+  padding: 20px 0px 0px 0px;
+}
 nav {
+  float: right;
+}
+
+ul.navigation-bar {
+  padding: 0px;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+ul.navigation-bar > li > a {
+  width: 100%;
+  font-weight: 600;
+  display: block;
+  font-size: 1.15em;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 70px 20px;
+}
+
+ul.navigation-bar > li > a:hover {
+  display: block;
+}
+
+ul.navigation-bar > li a::after {
+  display: block;
+}
+
+.logo {
+  float: left;
+  margin-top: 3.2%;
+}
+
+.logo > a {
+  display: block;
+}
+
+.logo > a:hover {
+  text-decoration: none;
+  color: #67267A;
+}
+
+/* banner */
+.banner {
+  background:url(../images/banner.png) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+  min-height: 750px;
+}
+
+#banner-text {
+  margin-top: 10%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#banner-text > h1 {
+  opacity: 0;
+  color: #FFFFFF;
+  font-size: 38px;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+#banner-text > p {
+  opacity: 0;
+  font-size: 17px;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+/*
+nav {
+  float:right;
   background-color: black;
   color: white;
   font-size: 24px;
@@ -14,15 +97,10 @@ nav {
   top: 0;
   left: 0;
   opacity: 0.5;
-  z-index: 0;
   border: 1px solid #E7E7E7;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-}
-
-nav > span {
-
 }
 
 nav > ul {
@@ -51,7 +129,7 @@ nav > ul > li > a.active {
   color: white;
   background-color: #4CAF50;
 }
-
+*/
 .background-banner {
   font-family: sans-serif;
   background-image: url("../images/sample2.jpg");
@@ -60,4 +138,8 @@ nav > ul > li > a.active {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+}
+
+footer > img{
+  background-color: black;
 }
