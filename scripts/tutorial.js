@@ -4,6 +4,7 @@ $(document).ready(function() {
     $("#banner-text h1").delay(250).animate({"opacity": "1"}, 700);
 });
 
+/* original javascript */
 function textChange() {
   document.getElementById("paragraph").innerHTML = "Hello World";
 }
