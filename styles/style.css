@@ -1,145 +1,230 @@
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  outline: none;
-}
-
-/* header css */
-.header {
-  padding: 20px 0px 0px 0px;
-}
-nav {
-  float: right;
-}
-
-ul.navigation-bar {
-  padding: 0px;
-}
-
-ul > li {
-  display: inline-block;
-}
-
-ul.navigation-bar > li > a {
-  width: 100%;
-  font-weight: 600;
-  display: block;
-  font-size: 1.15em;
-  color: #FFFFFF;
-  font-weight: 400;
+/* Initial setting */
+a {
+	transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
   text-decoration: none;
-  padding: 70px 20px;
+}
+/* End initial setting */
+
+/* Header CSS */
+header {
+	background-color: #000000;
+	padding: 0em 0em 1.4em 0em;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 75px;
+	opacity: 0.5;
 }
 
-ul.navigation-bar > li > a:hover {
-  display: block;
-}
-
-ul.navigation-bar > li a::after {
-  display: block;
+.header-main {
+	position: relative;
+	height: 75px;
 }
 
 .logo {
-  float: left;
-  margin-top: 3.2%;
+	float: left;
+	position: absolute;
 }
 
-.logo > a {
-  display: block;
-}
-
-.logo > a:hover {
-  text-decoration: none;
-  color: #67267A;
-}
-
-/* banner */
-.banner {
-  background:url(../images/banner.png) no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-  min-height: 750px;
-}
-
-#banner-text {
-  margin-top: 10%;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-#banner-text > h1 {
-  opacity: 0;
-  color: #FFFFFF;
-  font-size: 38px;
-  margin: 0px;
-  letter-spacing: 2px;
-}
-
-#banner-text > p {
-  opacity: 0;
-  font-size: 17px;
-  color: #FFFFFF;
-  margin-top: 5px;
-}
-
-/*
 nav {
-  float:right;
-  background-color: black;
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  border: 1px solid #E7E7E7;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
+	padding: 1em 0em 0em 0em;
+	float: right;
 }
 
 nav > ul {
-  margin-right: 25px;
+	padding: 0px;
+	list-style: none;
 }
 
 nav > ul > li {
-  display: inline;
-  margin-right: 20px;
-  float: right;
+	display: inline-block;
+	float: left;
 }
 
 nav > ul > li > a {
-  display: block;
-  color: #666666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 0.5em 1em 0.5em 1em;
+	display: block;
 }
 
-nav > ul > li > a:hover:not(.active) {
-  background-color: #DDDDDD;
+nav > ul > li > a:hover {
+	color: #C8A54B;
+	text-decoration: none;
 }
 
-nav > ul > li > a.active {
-  color: white;
-  background-color: #4CAF50;
+nav > ul > li > a:active {
+	color: #C8A54B;
+	text-decoration: none;
 }
-*/
-.background-banner {
-  font-family: sans-serif;
-  background-image: url("../images/sample2.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
+
+span.menu {
+	display: none;
+}
+/* End header CSS */
+
+/* Banner CSS */
+.banner {
+	background: url(../images/banner.png) no-repeat;
+	height: 100vh;
   width: 100vw;
+  left: 0;
+  top: 0;
+	background-size: cover;
+	background-position: center;
 }
 
-footer > img{
-  background-color: black;
+.banner-text {
+	width: 41%;
+	padding: 1em;
+	background: rgba(132, 117, 78, 0.50);
+	border-radius: 6px;
+	margin: auto;
+}
+
+.banner-main {
+	padding: 15em 0em 0em 0em;
+}
+
+.banner-text h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #FFFFFF;
+	margin: 0em 0em 0.25em 0em;
+}
+
+.banner-text p {
+	font-size: 0.9em;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 0em;
+}
+/* End of Banner CSS */
+
+/* contact CSS */
+#contact {
+    padding: 6em 0px;
+    background: #1F272A;
+		height: 300px;
+}
+
+.add1 span {
+	font-size: 1.8em;
+	color: #03CF74;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.add1 p {
+	color: #FFFFFF;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.add1 p a {
+	color: #FFFFFF;
+}
+
+.add1 p a:hover {
+	text-decoration: none;
+	color: #03CF74;
+}
+
+.add1 {
+	margin-top: 2.5%;
+	position: relative;
+	left: 35%;
+}
+
+.add1:nth-child(1) {
+	margin-top: 0;
+}
+/* End of Contact CSS */
+
+/*  Footer CSS*/
+footer {
+	padding:3.5em 0px;
+	background:#1F272A;
+	text-align:center;
+}
+
+.footer-top p {
+	font-size:15px;
+	color:#FFFFFF;
+	margin-top:3%;
+}
+
+.footer-top p a {
+	color:#FFFFFF;
+}
+
+.footer-top p a:hover {
+	color:#03CF74;
+}
+
+.footer-top ul {
+    margin-top: 3%;
+}
+
+.footer-top ul li {
+	list-style:none;
+	display:inline-block;
+	margin:0 6px;
+}
+
+.footer-top ul li a span {
+	background:url(../images/social-icons.png) no-repeat;
+	width:48px;
+	height:48px;
+	display:block;
+}
+
+.footer-top ul li a span.fb {
+	background-position:0px 0px;
+}
+
+.footer-top ul li a span.twit {
+	background-position:-48px 0px;
+}
+
+.footer-top ul li a span.google {
+	background-position:-96px 0px;
+}
+
+.footer-top ul li a span.fb:hover {
+	background-position:0px -48px;
+}
+
+.footer-top ul li a span.twit:hover {
+	background-position:-48px -48px;
+}
+
+.footer-top ul li a span.google:hover {
+	background-position:-96px -48px;
+}
+/* End of Footer CSS */
+
+
+@media(max-width: 320px) {
+	.header {
+		padding: 0em 0em 0.5em 0em;
+	}
+
+	.logo {
+		width: 42%;
+	}
+
+	nav {
+		width: 55%;
+		padding: 0.8em 0em 0em 0em;
+	}
 }
