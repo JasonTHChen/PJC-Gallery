@@ -92,14 +92,14 @@ span.menu {
 	padding: 15em 0em 0em 0em;
 }
 
-.banner-text h2 {
+.banner-text > h2 {
 	font-size: 1.5em;
 	font-weight: 400;
 	color: #FFFFFF;
 	margin: 0em 0em 0.25em 0em;
 }
 
-.banner-text p {
+.banner-text > p {
 	font-size: 0.9em;
   font-weight: 400;
   color: #FFFFFF;
@@ -110,106 +110,112 @@ span.menu {
 
 /* contact CSS */
 #contact {
-    padding: 6em 0px;
-    background: #1F272A;
-		height: 300px;
+  padding: 6em 0px;
+  background: #1F272A;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto 0 auto;
 }
 
-.add1 span {
-	font-size: 1.8em;
+.contact-info {
+	list-style: none;
+	display: table;
+	margin-top: 2.5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-info:nth-child(1) {
+	margin-top: 0;
+}
+
+.contact-info > li {
+	text-align: left;
+}
+
+.contact-info > li > p > span {
+	font-size: 1.5em;
 	color: #03CF74;
 	display: inline-block;
-	vertical-align: middle;
+	padding-right: 10px;
 }
 
-.add1 p {
+.contact-info > li > p {
 	color: #FFFFFF;
 	font-size: 16px;
 	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
 }
 
-.add1 p a {
+.contact-info > p > a {
 	color: #FFFFFF;
 }
 
-.add1 p a:hover {
+.contact-info > p > a:hover {
 	text-decoration: none;
 	color: #03CF74;
-}
-
-.add1 {
-	margin-top: 2.5%;
-	position: relative;
-	left: 35%;
-}
-
-.add1:nth-child(1) {
-	margin-top: 0;
 }
 /* End of Contact CSS */
 
 /*  Footer CSS*/
 footer {
-	padding:3.5em 0px;
-	background:#1F272A;
-	text-align:center;
+	padding: 3.5em 0px;
+	background: #1F272A;
+	text-align: center;
 }
 
-.footer-top p {
-	font-size:15px;
-	color:#FFFFFF;
-	margin-top:3%;
+.footer-top > p {
+	font-size: 15px;
+	color: #FFFFFF;
+	margin-top: 3%;
 }
 
-.footer-top p a {
-	color:#FFFFFF;
+.footer-top > p > a {
+	color: #FFFFFF;
 }
 
-.footer-top p a:hover {
-	color:#03CF74;
+.footer-top > p > a:hover {
+	color: #03CF74;
 }
 
-.footer-top ul {
+.footer-top > ul {
     margin-top: 3%;
 }
 
-.footer-top ul li {
-	list-style:none;
-	display:inline-block;
-	margin:0 6px;
+.footer-top > ul > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 6px;
 }
 
-.footer-top ul li a span {
-	background:url(../images/social-icons.png) no-repeat;
-	width:48px;
-	height:48px;
-	display:block;
+.footer-top > ul > li > a > span {
+	background: url(../images/social-icons.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: block;
 }
 
-.footer-top ul li a span.fb {
-	background-position:0px 0px;
+.footer-top > ul > li > a > span.fb {
+	background-position: 0px 0px;
 }
 
-.footer-top ul li a span.twit {
-	background-position:-48px 0px;
+.footer-top > ul > li > a > span.twit {
+	background-position: -48px 0px;
 }
 
-.footer-top ul li a span.google {
-	background-position:-96px 0px;
+.footer-top > ul > li > a > span.google {
+	background-position: -96px 0px;
 }
 
-.footer-top ul li a span.fb:hover {
-	background-position:0px -48px;
+.footer-top > ul > li > a > span.fb:hover {
+	background-position: 0px -48px;
 }
 
-.footer-top ul li a span.twit:hover {
-	background-position:-48px -48px;
+.footer-top > ul > li > a > span.twit:hover {
+	background-position: -48px -48px;
 }
 
-.footer-top ul li a span.google:hover {
-	background-position:-96px -48px;
+.footer-top > ul > li > a > span.google:hover {
+	background-position: -96px -48px;
 }
 /* End of Footer CSS */
 
