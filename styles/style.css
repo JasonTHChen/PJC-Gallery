@@ -17,7 +17,8 @@ header {
 	position: fixed;
 	width: 100vw;
 	height: 75px;
-	opacity: 0.5;
+	opacity: 0.8;
+	z-index: 999;
 }
 
 .header-main {
@@ -64,9 +65,42 @@ nav > ul > li > a:active {
 	text-decoration: none;
 }
 
-span.menu {
-	display: none;
+.dropdown {
+	margin-right: 15px;
 }
+
+.dropdown-btn {
+	color: #FFFFFF;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 0.5em 1em 0.5em 1em;
+	background: none;
+	border: none;
+}
+
+.dropdown-btn:hover{
+	color: #C8A54B;
+}
+
+.dropdown-btn:focus{
+  color: grey;
+}
+
+.dropdown-btn:active{
+  color: #C8A54B;
+}
+
+.dropdown-menu {
+	width: 250px;
+}
+
+.dropdown-menu > li > a {
+	font-size: 1.5em;
+	color: black;
+	font-weight: bold;
+	opacity: 100%;
+}
+
 /* End header CSS */
 
 /* Banner CSS */
