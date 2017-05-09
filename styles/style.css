@@ -31,6 +31,11 @@ header {
 	position: absolute;
 }
 
+.logo > a {
+	text-decoration: none;
+	display: block;
+}
+
 nav {
 	padding: 1em 0em 0em 0em;
 	float: right;
@@ -105,7 +110,7 @@ nav > ul > li > a:active {
 
 /* Banner CSS */
 .banner {
-	background: url(../images/banner.png) no-repeat;
+	background: url(../images/banner.jpg) no-repeat;
 	height: 100vh;
   width: 100vw;
   left: 0;
@@ -117,9 +122,11 @@ nav > ul > li > a:active {
 .banner-text {
 	width: 41%;
 	padding: 1em;
-	background: rgba(132, 117, 78, 0.50);
+	background: rgba(132, 117, 78, 0.8);
 	border-radius: 6px;
-	margin: auto;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .banner-main {
@@ -142,11 +149,120 @@ nav > ul > li > a:active {
 }
 /* End of Banner CSS */
 
+/* content heading */
+.heading > h3 {
+	font-size: 2.5em;
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 1.5em;
+	color: #000000;
+}
+/* End of content heading */
+
+/* Features CSS */
+#features {
+	background: #F6EEE9;
+	text-align: center;
+	padding-left: 4em 0;
+	height: 450px;
+}
+
+.feature-grid > h4 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  padding: 0.8em 0;
+  font-weight: 500;
+  color:#48474D;
+}
+
+.feature-grid > p {
+  font-size: 1.1em;
+  color: #666666;
+  line-height: 1.6em;
+  margin-bottom: 2em;
+}
+
+.feature-grid > img {
+  background: #0E83CD;
+  padding: 1em 1em;
+}
+
+.feature-grid > img:hover {
+  background: rgb(255, 0, 39);
+  border-radius: 10px;
+}
+
+.feature-grid > a {
+	background: rgb(255, 0, 39);
+  padding: 0.5em 1em;
+  font-size: 1.15em;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.feature-grid > a:hover{
+ background: #0E83CD;
+}
+/* End of Features CSS */
+
+/* About CSS */
+#about {
+	padding: 3em 0;
+}
+
+.about-bottom {
+	margin-top: 4%;
+}
+
+.about-left > h4 {
+	color: #03CF74;
+	font-size: 18px;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.about-left > p {
+	font-size: 15px;
+    color: #959798;
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+
+.abt-left > span {
+	font-size: 2em;
+	padding: 20px 20px;
+	background: #1F272A;
+	color: #03CF74;
+}
+
+.abt-right > p {
+	font-size: 15px;
+    color: #959798;
+    line-height: 1.8em;
+}
+
+.abt-left {
+	width: 20%;
+	float: left;
+}
+
+.abt-right {
+	width: 80%;
+	float: right;
+}
+
+.abt-one:nth-child(2) {
+	margin-top: 5%;
+}
+/* End of About CSS */
+
 /* contact CSS */
 #contact {
   padding: 6em 0px;
   background: #1F272A;
-	height: 300px;
+	height: 200px;
 	text-align: center;
 	margin: 0 auto 0 auto;
 }
