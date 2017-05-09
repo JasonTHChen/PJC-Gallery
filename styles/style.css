@@ -105,7 +105,6 @@ nav > ul > li > a:active {
 	font-weight: bold;
 	opacity: 100%;
 }
-
 /* End header CSS */
 
 /* Banner CSS */
@@ -165,7 +164,11 @@ nav > ul > li > a:active {
 	background: #F6EEE9;
 	text-align: center;
 	padding-left: 4em 0;
-	height: 450px;
+	min-height: 500px;
+}
+
+.feature-grid {
+	margin-bottom: 100px;
 }
 
 .feature-grid > h4 {
@@ -202,8 +205,8 @@ nav > ul > li > a:active {
   text-transform: capitalize;
 }
 
-.feature-grid > a:hover{
- background: #0E83CD;
+.feature-grid > a:hover {
+	background: #0E83CD;
 }
 /* End of Features CSS */
 
