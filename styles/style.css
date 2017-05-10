@@ -371,9 +371,15 @@ footer {
 }
 /* End of Footer CSS */
 
+@media (max-width: 480px) {
+	.abt-left > span {
+		font-size: 1.5em;
+		padding: 14px 14px;
+	}
+}
 
-@media(max-width: 320px) {
-	.header {
+@media (max-width: 320px) {
+	header {
 		padding: 0em 0em 0.5em 0em;
 	}
 
@@ -384,5 +390,10 @@ footer {
 	nav {
 		width: 55%;
 		padding: 0.8em 0em 0em 0em;
+	}
+
+	.abt-left > span {
+		font-size: 1.2em;
+		padding: 10px 10px;
 	}
 }
