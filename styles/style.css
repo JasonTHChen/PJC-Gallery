@@ -140,7 +140,7 @@ nav > ul > li > a:active {
 }
 
 .banner-main {
-  padding: 15em 0em 0em 0em;
+  margin-top: 25%;
 }
 
 .banner-text > h2 {
@@ -170,19 +170,19 @@ nav > ul > li > a:active {
 }
 /* End of content heading */
 
-/* Features CSS */
-#features {
+/* services CSS */
+#services {
   background: #F6EEE9;
   text-align: center;
   padding-left: 4em 0;
   min-height: 500px;
 }
 
-.feature-grid {
+.service-grid {
   margin-bottom: 100px;
 }
 
-.feature-grid > h4 {
+.service-grid > h4 {
   font-size: 1.5em;
   text-transform: capitalize;
   padding: 0.8em 0;
@@ -190,24 +190,24 @@ nav > ul > li > a:active {
   color:#48474D;
 }
 
-.feature-grid > p {
+.service-grid > p {
   font-size: 1.1em;
   color: #666666;
   line-height: 1.6em;
   margin-bottom: 2em;
 }
 
-.feature-grid > img {
+.service-grid > img {
   background: #0E83CD;
   padding: 1em 1em;
 }
 
-.feature-grid > img:hover {
+.service-grid > img:hover {
   background: rgb(255, 0, 39);
   border-radius: 10px;
 }
 
-.feature-grid > a {
+.service-grid > a {
   background: rgb(255, 0, 39);
   padding: 0.5em 1em;
   font-size: 1.15em;
@@ -216,10 +216,10 @@ nav > ul > li > a:active {
   text-transform: capitalize;
 }
 
-.feature-grid > a:hover {
+.service-grid > a:hover {
   background: #0E83CD;
 }
-/* End of Features CSS */
+/* End of services CSS */
 
 /* About CSS */
 #about {
@@ -273,7 +273,9 @@ nav > ul > li > a:active {
 /* End of About CSS */
 
 /* Gallery CSS */
-
+#gallery {
+  padding: 3em 0;
+}
 /* End of Gallery CSS */
 
 /* contact CSS */
@@ -387,7 +389,21 @@ footer {
 }
 /* End of Footer CSS */
 
+/* media control */
 @media (max-width: 480px) {
+  .banner {
+    min-height: 275px;
+  }
+
+  .banner-main {
+    margin-top: 50%;
+  }
+
+  .banner-text {
+
+  }
+
+
   .abt-left > span {
     font-size: 1.5em;
     padding: 14px 14px;
@@ -408,8 +424,13 @@ footer {
     padding: 0.8em 0em 0em 0em;
   }
 
+  .banner-main {
+    margin-top: 15%;
+  }
+
   .abt-left > span {
     font-size: 1.2em;
     padding: 10px 10px;
   }
 }
+/* End of media control */
