@@ -22,9 +22,6 @@ ul {
 /* End initial setting */
 
 /* Header */
-header {
-}
-
 .banner {
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
@@ -64,25 +61,35 @@ nav a {
   letter-spacing: 2px;
 }
 
-.logo {
+/* General Content Design */
+.content {
+  padding: 5em 0;
 }
 
-/* General Content Design */
-
-content
-
+.content h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  color: #566573;
+}
 /* End of General Content Design */
 
-/* content heading */
-.heading > h3 {
-  font-size: 2.5em;
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 1.5em;
-  color: #000000;
+#about {
+  background-color: #FFFFFF;
 }
-/* End of content heading */
+
+#about h2 {
+  color: #03CF74;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+#about p {
+  font-size: 15px;
+  color: #959798;
+}
 
 /* services CSS */
 #services {
@@ -134,57 +141,6 @@ content
   background: #0E83CD;
 }
 /* End of services CSS */
-
-/* About CSS */
-#about {
-  padding: 3em 0;
-}
-
-.about-bottom {
-  margin-top: 4%;
-}
-
-.about-left > h4 {
-  color: #03CF74;
-  font-size: 18px;
-  line-height: 1.5em;
-  margin: 0;
-}
-
-.about-left > p {
-  font-size: 15px;
-    color: #959798;
-    margin-top: 10px;
-    line-height: 1.8em;
-}
-
-.abt-left > span {
-  font-size: 2em;
-  padding: 20px 20px;
-  background: #1F272A;
-  color: #03CF74;
-}
-
-.abt-right > p {
-  font-size: 15px;
-    color: #959798;
-    line-height: 1.8em;
-}
-
-.abt-left {
-  width: 20%;
-  float: left;
-}
-
-.abt-right {
-  width: 80%;
-  float: right;
-}
-
-.abt-one:nth-child(2) {
-  margin-top: 5%;
-}
-/* End of About CSS */
 
 /* Gallery CSS */
 #gallery {
@@ -304,47 +260,92 @@ footer {
 /* End of Footer CSS */
 
 /* media control */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  /* Header */
   .banner {
-    min-height: 275px;
+    min-height: 100vh;
   }
 
-  .banner-main {
-    margin-top: 50%;
+  .banner-info {
+    margin-top: 5em;
+    text-align: center;
   }
 
-  .banner-text {
-
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
   }
 
-
-  .abt-left > span {
-    font-size: 1.5em;
-    padding: 14px 14px;
-  }
-}
-
-@media (max-width: 320px) {
-  header {
-    padding: 0em 0em 0.5em 0em;
-  }
-
-  .logo {
-    width: 42%;
+  .banner-info p {
+    font-size: 12px;
   }
 
   nav {
-    width: 55%;
-    padding: 0.8em 0em 0em 0em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
-  .banner-main {
-    margin-top: 15%;
+  nav a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0px;
   }
 
-  .abt-left > span {
-    font-size: 1.2em;
-    padding: 10px 10px;
+  .logo {
+    width: 30%;
+    height: auto;
   }
+  /* End of Header */
+
+  /* Content: About */
+  .about_detail h2, p {
+    text-align: center;
+  }
+  /* End of About */
+}
+
+@media (max-width: 575px) {
+  /* Header */
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-info {
+    margin-top: 10em;
+    text-align: center;
+  }
+
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .banner-info p {
+    font-size: 12px;
+  }
+  /* End of Header */
+
+  /* General Content Design */
+  .content h1 {
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    padding: 3em 0;
+  }
+  /* End of General Content Design */
+
+  /* Content: About */
+  #about h2 {
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+
+  #about p {
+    font-size: 12px;
+    color: #959798;
+  }
+  /* End of About */
 }
 /* End of media control */
