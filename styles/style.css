@@ -19,7 +19,7 @@ a:hover {
 ul {
   list-style: none;
 }
-/* End initial setting */
+/* End of initial setting */
 
 /* Header */
 .banner {
@@ -47,19 +47,7 @@ ul {
   margin: 1.5em 0 5em;
   letter-spacing: 2px;
 }
-
-nav {
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-nav a {
-  color: #566573;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
+/* End of Header */
 
 /* General Content Design */
 .content {
@@ -145,122 +133,11 @@ nav a {
 
 /* End of Team */
 
-/* Gallery CSS */
-#gallery {
-  padding: 3em 0;
+/* Content: Service */
+#service {
+  background-color: #F6EEE9;
 }
-/* End of Gallery CSS */
-
-/* contact CSS */
-#contact {
-  padding: 6em 0px;
-  background: #1F272A;
-  height: 200px;
-  text-align: center;
-  margin: 0 auto 0 auto;
-}
-
-.contact-info {
-  list-style: none;
-  display: table;
-  margin-top: 2.5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-info:nth-child(1) {
-  margin-top: 0;
-}
-
-.contact-info > li {
-  text-align: left;
-}
-
-.contact-info > li > p > span {
-  font-size: 1.5em;
-  color: #03CF74;
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.contact-info > li > p {
-  color: #FFFFFF;
-  font-size: 16px;
-  display: inline-block;
-}
-
-.contact-info > p > a {
-  color: #FFFFFF;
-}
-
-.contact-info > p > a:hover {
-  text-decoration: none;
-  color: #03CF74;
-}
-/* End of Contact CSS */
-
-/*  Footer CSS*/
-footer {
-  padding: 3.5em 0px;
-  background: #1F272A;
-  text-align: center;
-}
-
-.footer-top > p {
-  font-size: 15px;
-  color: #FFFFFF;
-  margin-top: 3%;
-}
-
-.footer-top > p > a {
-  color: #FFFFFF;
-}
-
-.footer-top > p > a:hover {
-  color: #03CF74;
-}
-
-.footer-top > ul {
-    margin-top: 3%;
-}
-
-.footer-top > ul > li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 6px;
-}
-
-.footer-top > ul > li > a > span {
-  background: url(../images/social-icons.png) no-repeat;
-  width: 48px;
-  height: 48px;
-  display: block;
-}
-
-.footer-top > ul > li > a > span.fb {
-  background-position: 0px 0px;
-}
-
-.footer-top > ul > li > a > span.twit {
-  background-position: -48px 0px;
-}
-
-.footer-top > ul > li > a > span.google {
-  background-position: -96px 0px;
-}
-
-.footer-top > ul > li > a > span.fb:hover {
-  background-position: 0px -48px;
-}
-
-.footer-top > ul > li > a > span.twit:hover {
-  background-position: -48px -48px;
-}
-
-.footer-top > ul > li > a > span.google:hover {
-  background-position: -96px -48px;
-}
-/* End of Footer CSS */
+/* End of Service */
 
 /* media control */
 @media (max-width: 1200px) {
@@ -299,22 +176,6 @@ footer {
 
   .banner-info p {
     font-size: 12px;
-  }
-
-  nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  nav a {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0px;
-  }
-
-  .logo {
-    width: 30%;
-    height: auto;
   }
   /* End of Header */
 
