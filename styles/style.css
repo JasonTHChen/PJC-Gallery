@@ -76,6 +76,7 @@ nav a {
 }
 /* End of General Content Design */
 
+/* Content: About */
 #about {
   background-color: #FFFFFF;
 }
@@ -90,57 +91,59 @@ nav a {
   font-size: 15px;
   color: #959798;
 }
+/* End of About */
 
-/* services CSS */
-#services {
-  background: #F6EEE9;
-  text-align: center;
-  padding-left: 4em 0;
-  min-height: 500px;
+/* Content: Team */
+#team {
+  background-color: #1B2631;
 }
 
-.service-grid {
-  margin-bottom: 100px;
+.team_member h2 {
+  color: #F7DC6F;
+  padding: 0;
 }
 
-.service-grid > h4 {
-  font-size: 1.5em;
-  text-transform: capitalize;
-  padding: 0.8em 0;
-  font-weight: 500;
-  color:#48474D;
+.member {
+  margin-top: 1rem;
 }
 
-.service-grid > p {
-  font-size: 1.1em;
-  color: #666666;
-  line-height: 1.6em;
-  margin-bottom: 2em;
+.member_profile {
+  background-color: #1B2631;
+  border: none;
 }
 
-.service-grid > img {
-  background: #0E83CD;
-  padding: 1em 1em;
+.member_profile img {
+
+  border: 1px solid #FFFFFF;
 }
 
-.service-grid > img:hover {
-  background: rgb(255, 0, 39);
-  border-radius: 10px;
+.member_info {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  padding: 0.5em 0;
 }
 
-.service-grid > a {
-  background: rgb(255, 0, 39);
-  padding: 0.5em 1em;
-  font-size: 1.15em;
+.member_info h4 {
+  text-decoration: underline;
+  color: #D98880;
+  text-transform: uppercase;
+}
+
+.member_info h5 {
+  color: #ABEBC6;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.member_info p {
   color: #FFFFFF;
-  text-decoration: none;
-  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  margin-top: 2em;
 }
 
-.service-grid > a:hover {
-  background: #0E83CD;
-}
-/* End of services CSS */
+/* End of Team */
 
 /* Gallery CSS */
 #gallery {
@@ -260,6 +263,24 @@ footer {
 /* End of Footer CSS */
 
 /* media control */
+@media (max-width: 1200px) {
+  /* Content: Team */
+  .member_info {
+    width: 70%;
+    margin-top: 0.5em;
+  }
+  /* End of Team */
+}
+
+@media (max-width: 992px) {
+  /* Content: Team */
+  .member_info {
+    width: 60%;
+    margin-top: 0.5em;
+  }
+  /* End of Team */
+}
+
 @media (max-width: 768px) {
   /* Header */
   .banner {
@@ -302,6 +323,19 @@ footer {
     text-align: center;
   }
   /* End of About */
+
+  /* Content: Team */
+  .member {
+    margin-top: 3.5rem;
+  }
+  .member_profile {
+    margin: 0 auto;
+  }
+
+  .member_info {
+    width: 100%;
+  }
+  /* End of Team */
 }
 
 @media (max-width: 575px) {
@@ -347,5 +381,15 @@ footer {
     color: #959798;
   }
   /* End of About */
+
+  /* Content: Team */
+  .member_info h4 {
+    font-size: 1rem;
+  }
+
+  .member_info h5 {
+    font-size: 0.75rem;
+  }
+  /* End of Team */
 }
 /* End of media control */
