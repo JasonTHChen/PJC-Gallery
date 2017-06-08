@@ -11,426 +11,246 @@ a {
   -o-transition: 0.5s all;
   text-decoration: none;
 }
-/* End initial setting */
 
-/* Header CSS */
-header {
-  background-color: #000000;
-  padding: 0em 0em 1.4em 0em;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100vw;
-  height: 100px;
-  opacity: 0.8;
-  z-index: 999;
-}
-
-.header-main {
-  position: relative;
-  height: 100px;
-}
-
-.logo {
-  float: left;
-  position: absolute;
-}
-
-.logo > a {
-
+a:hover {
   text-decoration: none;
-  display: block;
 }
 
-.logo > a > h3 {
-  padding: 0.5em 1em 0.5em 1em;
-  float: right;
-
-}
-
-nav {
-  padding: 1em 0em 0em 0em;
-  float: right;
-}
-
-nav > ul {
-  padding: 0px;
+ul {
   list-style: none;
 }
+/* End of initial setting */
 
-nav > ul > li {
-  display: inline-block;
-  float: left;
+/* Header */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
 }
 
-nav > ul > li > a {
-  font-size: 1.5em;
-  font-weight: 400;
+.banner-info {
+  margin-top: 15em;
+  text-align: center;
+}
+
+.banner-info h3 {
   color: #FFFFFF;
-  text-decoration: none;
-  padding: 0.5em 1em 0.5em 1em;
-  display: block;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
 }
 
-nav > ul > li > a:hover {
-  color: #C8A54B;
-  text-decoration: none;
-}
-
-nav > ul > li > a:active {
-  color: #C8A54B;
-  text-decoration: none;
-}
-
-.dropdown {
-  margin-right: 10px;
-}
-
-.dropdown-btn {
+.banner-info p {
   color: #FFFFFF;
-  font-size: 1.5em;
-  font-weight: 400;
-  padding: 1em 1em 0.5em 1em;
-  background: none;
+  font-size: 20px;
+  margin: 1.5em 0 5em;
+  letter-spacing: 2px;
+}
+/* End of Header */
+
+/* General Content Design */
+.content {
+  padding: 5em 0;
+}
+
+.content h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  color: #566573;
+}
+/* End of General Content Design */
+
+/* Content: About */
+#about {
+  background-color: #FFFFFF;
+}
+
+#about h2 {
+  color: #03CF74;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+#about p {
+  font-size: 15px;
+  color: #959798;
+}
+/* End of About */
+
+/* Content: Team */
+#team {
+  background-color: #1B2631;
+}
+
+.team_member h2 {
+  color: #F7DC6F;
+  padding: 0;
+}
+
+.member {
+  margin-top: 1rem;
+}
+
+.member_profile {
+  background-color: #1B2631;
   border: none;
 }
 
-.dropdown-btn:hover{
-  color: #C8A54B;
+.member_profile img {
+
+  border: 1px solid #FFFFFF;
 }
 
-.dropdown-btn:focus{
-  color: grey;
+.member_info {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  padding: 0.5em 0;
 }
 
-.dropdown-btn:active{
-  color: #C8A54B;
+.member_info h4 {
+  text-decoration: underline;
+  color: #D98880;
+  text-transform: uppercase;
 }
 
-.dropdown-menu {
-  width: 250px;
+.member_info h5 {
+  color: #ABEBC6;
+  padding: 5px 0;
+  margin: 5px 0;
 }
 
-.dropdown-menu > li > a {
-  font-size: 1.5em;
-  color: black;
-  font-weight: bold;
-  opacity: 100%;
-}
-/* End header CSS */
-
-/* Banner CSS */
-.banner {
-  background: url(../images/banner.jpg) no-repeat;
-  height: 100vh;
-  width: 100vw;
-  left: 0;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-text {
-  width: 41%;
-  padding: 1em;
-  background: rgba(132, 117, 78, 0.8);
-  border-radius: 6px;
-  margin: auto;
-  min-width: 250px;
-}
-
-.banner-main {
-  margin-top: 25%;
-}
-
-.banner-text > h2 {
-  font-size: 1.5em;
-  font-weight: 400;
+.member_info p {
   color: #FFFFFF;
-  margin: 0em 0em 0.25em 0em;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  margin-top: 2em;
 }
 
-.banner-text > p {
-  font-size: 0.9em;
-  font-weight: 400;
-  color: #FFFFFF;
-  line-height: 1.5em;
-  margin: 0em 0em 0.5em 0em;
-}
-/* End of Banner CSS */
+/* End of Team */
 
-/* content heading */
-.heading > h3 {
-  font-size: 2.5em;
-  font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 1.5em;
-  color: #000000;
+/* Content: Service */
+#service {
+  background-color: #F6EEE9;
 }
-/* End of content heading */
-
-/* services CSS */
-#services {
-  background: #F6EEE9;
-  text-align: center;
-  padding-left: 4em 0;
-  min-height: 500px;
-}
-
-.service-grid {
-  margin-bottom: 100px;
-}
-
-.service-grid > h4 {
-  font-size: 1.5em;
-  text-transform: capitalize;
-  padding: 0.8em 0;
-  font-weight: 500;
-  color:#48474D;
-}
-
-.service-grid > p {
-  font-size: 1.1em;
-  color: #666666;
-  line-height: 1.6em;
-  margin-bottom: 2em;
-}
-
-.service-grid > img {
-  background: #0E83CD;
-  padding: 1em 1em;
-}
-
-.service-grid > img:hover {
-  background: rgb(255, 0, 39);
-  border-radius: 10px;
-}
-
-.service-grid > a {
-  background: rgb(255, 0, 39);
-  padding: 0.5em 1em;
-  font-size: 1.15em;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.service-grid > a:hover {
-  background: #0E83CD;
-}
-/* End of services CSS */
-
-/* About CSS */
-#about {
-  padding: 3em 0;
-}
-
-.about-bottom {
-  margin-top: 4%;
-}
-
-.about-left > h4 {
-  color: #03CF74;
-  font-size: 18px;
-  line-height: 1.5em;
-  margin: 0;
-}
-
-.about-left > p {
-  font-size: 15px;
-    color: #959798;
-    margin-top: 10px;
-    line-height: 1.8em;
-}
-
-.abt-left > span {
-  font-size: 2em;
-  padding: 20px 20px;
-  background: #1F272A;
-  color: #03CF74;
-}
-
-.abt-right > p {
-  font-size: 15px;
-    color: #959798;
-    line-height: 1.8em;
-}
-
-.abt-left {
-  width: 20%;
-  float: left;
-}
-
-.abt-right {
-  width: 80%;
-  float: right;
-}
-
-.abt-one:nth-child(2) {
-  margin-top: 5%;
-}
-/* End of About CSS */
-
-/* Gallery CSS */
-#gallery {
-  padding: 3em 0;
-}
-/* End of Gallery CSS */
-
-/* contact CSS */
-#contact {
-  padding: 6em 0px;
-  background: #1F272A;
-  height: 200px;
-  text-align: center;
-  margin: 0 auto 0 auto;
-}
-
-.contact-info {
-  list-style: none;
-  display: table;
-  margin-top: 2.5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-info:nth-child(1) {
-  margin-top: 0;
-}
-
-.contact-info > li {
-  text-align: left;
-}
-
-.contact-info > li > p > span {
-  font-size: 1.5em;
-  color: #03CF74;
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.contact-info > li > p {
-  color: #FFFFFF;
-  font-size: 16px;
-  display: inline-block;
-}
-
-.contact-info > p > a {
-  color: #FFFFFF;
-}
-
-.contact-info > p > a:hover {
-  text-decoration: none;
-  color: #03CF74;
-}
-/* End of Contact CSS */
-
-/*  Footer CSS*/
-footer {
-  padding: 3.5em 0px;
-  background: #1F272A;
-  text-align: center;
-}
-
-.footer-top > p {
-  font-size: 15px;
-  color: #FFFFFF;
-  margin-top: 3%;
-}
-
-.footer-top > p > a {
-  color: #FFFFFF;
-}
-
-.footer-top > p > a:hover {
-  color: #03CF74;
-}
-
-.footer-top > ul {
-    margin-top: 3%;
-}
-
-.footer-top > ul > li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 6px;
-}
-
-.footer-top > ul > li > a > span {
-  background: url(../images/social-icons.png) no-repeat;
-  width: 48px;
-  height: 48px;
-  display: block;
-}
-
-.footer-top > ul > li > a > span.fb {
-  background-position: 0px 0px;
-}
-
-.footer-top > ul > li > a > span.twit {
-  background-position: -48px 0px;
-}
-
-.footer-top > ul > li > a > span.google {
-  background-position: -96px 0px;
-}
-
-.footer-top > ul > li > a > span.fb:hover {
-  background-position: 0px -48px;
-}
-
-.footer-top > ul > li > a > span.twit:hover {
-  background-position: -48px -48px;
-}
-
-.footer-top > ul > li > a > span.google:hover {
-  background-position: -96px -48px;
-}
-/* End of Footer CSS */
+/* End of Service */
 
 /* media control */
-@media (max-width: 480px) {
-  .banner {
-    min-height: 275px;
+@media (max-width: 1200px) {
+  /* Content: Team */
+  .member_info {
+    width: 70%;
+    margin-top: 0.5em;
   }
-
-  .banner-main {
-    margin-top: 50%;
-  }
-
-  .banner-text {
-
-  }
-
-
-  .abt-left > span {
-    font-size: 1.5em;
-    padding: 14px 14px;
-  }
+  /* End of Team */
 }
 
-@media (max-width: 320px) {
-  header {
-    padding: 0em 0em 0.5em 0em;
+@media (max-width: 992px) {
+  /* Content: Team */
+  .member_info {
+    width: 60%;
+    margin-top: 0.5em;
+  }
+  /* End of Team */
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .banner {
+    min-height: 100vh;
   }
 
-  .logo {
-    width: 42%;
+  .banner-info {
+    margin-top: 5em;
+    text-align: center;
   }
 
-  nav {
-    width: 55%;
-    padding: 0.8em 0em 0em 0em;
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
   }
 
-  .banner-main {
-    margin-top: 15%;
+  .banner-info p {
+    font-size: 12px;
+  }
+  /* End of Header */
+
+  /* Content: About */
+  .about_detail h2, p {
+    text-align: center;
+  }
+  /* End of About */
+
+  /* Content: Team */
+  .member {
+    margin-top: 3.5rem;
+  }
+  .member_profile {
+    margin: 0 auto;
   }
 
-  .abt-left > span {
-    font-size: 1.2em;
-    padding: 10px 10px;
+  .member_info {
+    width: 100%;
   }
+  /* End of Team */
+}
+
+@media (max-width: 575px) {
+  /* Header */
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-info {
+    margin-top: 10em;
+    text-align: center;
+  }
+
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .banner-info p {
+    font-size: 12px;
+  }
+  /* End of Header */
+
+  /* General Content Design */
+  .content h1 {
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    padding: 3em 0;
+  }
+  /* End of General Content Design */
+
+  /* Content: About */
+  #about h2 {
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+
+  #about p {
+    font-size: 12px;
+    color: #959798;
+  }
+  /* End of About */
+
+  /* Content: Team */
+  .member_info h4 {
+    font-size: 1rem;
+  }
+
+  .member_info h5 {
+    font-size: 0.75rem;
+  }
+  /* End of Team */
 }
 /* End of media control */
