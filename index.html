@@ -14,12 +14,15 @@
     <!-- JQuery 3.2.1 Import -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <!-- Wow Import -->
+    <script src="js/wow.min.js"></script>
     <!-- Tether Import -->
     <script src="js/tether.min.js"></script>
     <!-- Bootstrap 4 Imports -->
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
     <!-- Default Styling -->
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -35,25 +38,25 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="banner" id="home">
-        <div class="fixed-nav">
-          <div class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" role="navigation">
-            <div class="nav-container container">
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="scroll navbar-brand" href="#home">PJC Gallery</a>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="scroll nav-link" href="#about">About</a></li>
-                  <li class="nav-item"><a class="scroll nav-link" href="#team">Team</a></li>
-                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                  <li class="nav-item"><a class="scroll nav-link" href="#contact">Contact</a></li>
-                </ul>
-              </div>
+      <div class="fixed-nav">
+        <div class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse" role="navigation">
+          <div class="nav-container container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="scroll navbar-brand" href="#home">PJC Gallery</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="scroll nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="scroll nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="scroll nav-link" href="#contact">Contact</a></li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+      <div class="banner wow fadeInUp animated"  data-wow-duration="100ms" id="home">
         <div class="container">
           <nav>
             <div class="header-nav">
@@ -68,7 +71,7 @@
             <div class="clearfix"></div>
             <hr class="hidden-xs-down">
           </nav>
-          <div class="row banner-info">
+          <div class="banner-info row wow fadeInDown animated"  data-wow-duration="1000ms">
             <h3 class="col-sm-12">Capture your memory</h3>
             <p class="lead col-sm-12">Print your life in a simple photo</p>
           </div>
