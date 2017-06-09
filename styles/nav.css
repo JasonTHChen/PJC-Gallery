@@ -11,6 +11,22 @@ nav a {
   letter-spacing: 2px;
 }
 
+.fixed-nav {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  display: none;
+}
+
+.navbar-brand {
+  font-size: 1.50rem;
+}
+
+.navbar-nav a {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   nav {
     padding-top: 1em;
@@ -26,5 +42,13 @@ nav a {
   .logo {
     width: 30%;
     height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-container {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
