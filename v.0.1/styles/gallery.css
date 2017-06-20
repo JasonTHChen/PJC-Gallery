@@ -1,0 +1,48 @@
+/* Initial setting */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* End of initial setting */
+
+/* Header */
+.banner {
+  background-image: url(../images/nav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+/* End of Header */
+
+/* General Content Design */
+.content h1 {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.content {
+  padding: 3em 0;
+}
+/* End of General Content Design */
+
+/* Gallery */
+/* End of Gallery */

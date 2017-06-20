@@ -1,0 +1,256 @@
+/* Initial setting */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* End of initial setting */
+
+/* Header */
+.banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.banner-info {
+  margin-top: 15em;
+  text-align: center;
+}
+
+.banner-info h3 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.banner-info p {
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: 1.5em 0 5em;
+  letter-spacing: 2px;
+}
+/* End of Header */
+
+/* General Content Design */
+.content {
+  padding: 5em 0;
+}
+
+.content h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  color: #566573;
+}
+/* End of General Content Design */
+
+/* Content: About */
+#about {
+  background-color: #FFFFFF;
+}
+
+#about h2 {
+  color: #03CF74;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+#about p {
+  font-size: 15px;
+  color: #959798;
+}
+/* End of About */
+
+/* Content: Team */
+#team {
+  background-color: #1B2631;
+}
+
+.team_member h2 {
+  color: #F7DC6F;
+  padding: 0;
+}
+
+.member {
+  margin-top: 1rem;
+}
+
+.member_profile {
+  background-color: #1B2631;
+  border: none;
+}
+
+.member_profile img {
+
+  border: 1px solid #FFFFFF;
+}
+
+.member_info {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  padding: 0.5em 0;
+}
+
+.member_info h4 {
+  text-decoration: underline;
+  color: #D98880;
+  text-transform: uppercase;
+}
+
+.member_info h5 {
+  color: #ABEBC6;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.member_info p {
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  margin-top: 2em;
+}
+
+/* End of Team */
+
+/* Content: Service */
+#service {
+  background-color: #F6EEE9;
+}
+/* End of Service */
+
+/* media control */
+@media (max-width: 1200px) {
+  /* Content: Team */
+  .member_info {
+    width: 70%;
+    margin-top: 0.5em;
+  }
+  /* End of Team */
+}
+
+@media (max-width: 992px) {
+  /* Content: Team */
+  .member_info {
+    width: 60%;
+    margin-top: 0.5em;
+  }
+  /* End of Team */
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-info {
+    margin-top: 5em;
+    text-align: center;
+  }
+
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .banner-info p {
+    font-size: 12px;
+  }
+  /* End of Header */
+
+  /* Content: About */
+  .about_detail h2, p {
+    text-align: center;
+  }
+  /* End of About */
+
+  /* Content: Team */
+  .member {
+    margin-top: 3.5rem;
+  }
+  .member_profile {
+    margin: 0 auto;
+  }
+
+  .member_info {
+    width: 100%;
+  }
+  /* End of Team */
+}
+
+@media (max-width: 575px) {
+  /* Header */
+  .banner {
+    min-height: 100vh;
+  }
+
+  .banner-info {
+    margin-top: 10em;
+    text-align: center;
+  }
+
+  .banner-info h3 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  .banner-info p {
+    font-size: 12px;
+  }
+  /* End of Header */
+
+  /* General Content Design */
+  .content h1 {
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    padding: 3em 0;
+  }
+  /* End of General Content Design */
+
+  /* Content: About */
+  #about h2 {
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+
+  #about p {
+    font-size: 12px;
+    color: #959798;
+  }
+  /* End of About */
+
+  /* Content: Team */
+  .member_info h4 {
+    font-size: 1rem;
+  }
+
+  .member_info h5 {
+    font-size: 0.75rem;
+  }
+  /* End of Team */
+}
+/* End of media control */
