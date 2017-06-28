@@ -35,15 +35,18 @@ ul {
 #footer {
   width: 100%;
   height: 100px;
-  background-color: #1F272A;
+  background-color: #C4C4C4;
+  text-align: center;
 }
 
 #footer ul {
-
+  margin-top: 10px;
+  padding-left: 0;
 }
 
 #footer ul > li {
   display: inline-block;
+  margin: 0 6px;
 }
 
 #footer span {
@@ -53,9 +56,34 @@ ul {
 }
 
 .fb {
-  background-image: url(../icons/facebook_icon.png);
-  background-repeat: no-repeat;
-  height: 48px;
-  width: 48px;
+  background: url(../icons/facebook_icon.png) no-repeat;
+}
+
+.fb:hover {
+  background: url(../icons/facebook_hover.png) no-repeat;
+}
+
+.twitter {
+  background: url(../icons/twitter_icon.png) no-repeat;
+}
+
+.twitter:hover {
+  background: url(../icons/twitter_hover.png) no-repeat;
+}
+
+.google-plus {
+  background: url(../icons/google-plus_icon.png) no-repeat;
+}
+
+.google-plus:hover {
+  background: url(../icons/google-plus_hover.png) no-repeat;
+}
+
+.instagram {
+  background: url(../icons/instagram_icon.png) no-repeat;
+}
+
+.instagram:hover {
+  background: url(../icons/instagram_hover.png) no-repeat;
 }
 /* End of Footer */
